@@ -217,7 +217,6 @@ def copy_node(node):
 
 
 def test_expression_step_by_step(test_expr):
-    print(f"\nTest expression: {test_expr}")
     expr = Expression(test_expr)
     expr.tokenize()
     optimized_tokens = refine_tokens(expr.token_list)
